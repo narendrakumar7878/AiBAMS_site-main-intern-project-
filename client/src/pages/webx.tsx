@@ -412,13 +412,45 @@ export default function FusionWebX() {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
       </section>
 
+      {/* 5. CTA Section */}
+      <section className="relative py-28 px-6 sm:px-8 overflow-hidden bg-black">
+        <div className="absolute inset-0">
+          <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue-900/5 blur-[80px]"></div>
+          <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-purple-900/5 blur-[80px]"></div>
+        </div>
 
+        <div className="relative z-10 max-w-2xl mx-auto text-center">
+          <div className="mb-8 flex justify-center">
+            <div className="bg-gradient-to-r from-blue-600/80 to-purple-600/80 p-0.5 rounded-full">
+              <div className="bg-black rounded-full px-4 py-1 border border-gray-800">
+                <span className="text-xs font-medium tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">
+                  EARLY ACCESS
+                </span>
+              </div>
+            </div>
+          </div>
 
+          <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+            ⚡ Make Your Web Presence Instant
+          </h3>
 
-      
+          <p className="text-lg text-gray-300 mb-8 max-w-lg mx-auto leading-relaxed">
+            Claim your WebX and launch within the hour — really.
+          </p>
 
+          <div className="relative group max-w-fit mx-auto mb-8">
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 blur opacity-75 group-hover:opacity-100 transition-all duration-300"></div>
+            <button className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full font-bold tracking-wide hover:from-blue-500 hover:to-purple-500 transition-all duration-300 shadow-lg hover:shadow-xl border border-blue-400/20">
+              🌐 LAUNCH WITH WEBX
+            </button>
+          </div>
 
-
+          <p className="text-gray-400 text-sm">
+            Free AI site builds & hosting for early access members.
+          </p>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+      </section>
 
 
 
