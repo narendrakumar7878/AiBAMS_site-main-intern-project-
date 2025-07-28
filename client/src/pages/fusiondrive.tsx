@@ -289,37 +289,84 @@ export default function FusionDrive() {
 
 
 
-            {/* 5. AI Section */}
-            <section className="py-20 px-4 bg-[#0f172a] relative">
-                <div className="max-w-3xl mx-auto text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                        🧠 Embedded Intelligence
-                    </h3>
-                    <div className="p-6 bg-[#1e293b] rounded-xl border border-purple-500/30 inline-block">
-                        <p className="text-gray-300">
+            {/* 5. AI Section - Modern */}
+            <section className="py-24 px-6 bg-black relative overflow-hidden">
+                {/* Top divider line */}
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+
+                {/* Background elements */}
+                <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-purple-900/30 blur-[80px]"></div>
+                    <div className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-blue-900/30 blur-[100px]"></div>
+                </div>
+
+                <div className="relative z-10 max-w-3xl mx-auto text-center">
+                    {/* Section Header */}
+                    <div className="mb-12">
+                        <div className="text-xs tracking-widest text-gray-400 mb-3 font-medium"># DRIVE AI</div>
+                        <h3 className="text-3xl font-bold text-white mb-6">
+                            <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">Embedded</span> Intelligence
+                        </h3>
+                    </div>
+
+                    {/* AI Feature Box */}
+                    <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-700 backdrop-blur-sm inline-block max-w-full">
+                        <p className="text-lg text-gray-300 leading-relaxed italic">
                             "Soon, Fusion-Drive will auto-tag files, generate previews from audio/video, and suggest storage optimization strategies."
                         </p>
+                        {/* <div className="mt-4 text-sm text-purple-400 flex items-center justify-center gap-2">
+                            <svg className="w-4 h-4 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                            </svg>
+                            Coming soon
+                        </div> */}
                     </div>
                 </div>
+
+                {/* Bottom divider line */}
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
             </section>
 
 
 
 
 
-            {/* 6. CTA Section */}
-            <section className="py-20 px-4 bg-gradient-to-br from-blue-900/40 to-purple-900/40">
-                <div className="max-w-2xl mx-auto text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                        🚀 Ready to Simplify File Chaos?
+            {/* 6. CTA Section - Modern */}
+            <section className="py-24 px-6 bg-black relative overflow-hidden">
+                {/* Background elements */}
+                <div className="absolute inset-0 opacity-20">
+                    <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-900/30 blur-[80px]"></div>
+                    <div className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-purple-900/30 blur-[100px]"></div>
+                </div>
+
+                <div className="relative z-10 max-w-2xl mx-auto text-center">
+                    {/* Section header */}
+                    <div className="text-xs tracking-widest text-gray-400 mb-4 font-medium uppercase">
+                        # READY TO TRANSFORM YOUR FILES?
+                    </div>
+
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                        <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Simplify</span> File Chaos
                     </h3>
-                    <p className="text-gray-300 mb-8">
+
+                    <p className="text-gray-300 mb-10 max-w-lg mx-auto text-lg">
                         Get started with 5GB free — no card required. Your team's assets, ideas, and data now have a smarter home.
                     </p>
-                    <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition-all shadow-lg">
-                        📁 START USING FUSION-DRIVE
+
+                    {/* Animated button */}
+                    <button className="relative overflow-hidden group bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-purple-500/30">
+                        <span className="relative z-10 flex items-center justify-center gap-2">
+                            📁 START USING FUSION-DRIVE
+                            <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     </button>
                 </div>
+
+                {/* Bottom divider line */}
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
             </section>
 
             <Footer />
