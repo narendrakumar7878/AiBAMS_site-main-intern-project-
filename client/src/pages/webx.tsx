@@ -271,6 +271,95 @@ export default function FusionWebX() {
         </div>
       </section>
 
+
+
+
+      {/* 3. Features Section */}
+      <section className="py-24 px-6 sm:px-10 lg:px-16 bg-black relative overflow-hidden border-t border-b border-gray-800/50">
+        {/* Glow Effects */}
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-gradient-to-br from-blue-900/30 to-transparent blur-[100px]"></div>
+          <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-gradient-to-tl from-purple-900/30 to-transparent blur-[120px]"></div>
+        </div>
+
+        {/* Section Border (Bottom) */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700/50 to-transparent"></div>
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-gray-800/50 rounded-full border border-gray-700 mb-4">
+              <span className="text-xs tracking-widest text-gray-300 font-medium"># WHAT IT PACKS</span>
+            </div>
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Core Features</span>
+            </h3>
+            <div className="w-24 h-px bg-gradient-to-r from-blue-500/80 to-purple-600/80 mx-auto mt-6"></div>
+          </div>
+
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                emoji: "✨",
+                title: "AI Layout & Content",
+                description: "Auto-generates text, images & section structures",
+                color: "blue-400"
+              },
+              {
+                emoji: "🔒",
+                title: "Free SSL & Hosting",
+                description: "Secure cloud hosting with zero setup required",
+                color: "purple-400"
+              },
+              {
+                emoji: "🌍",
+                title: "SEO-First Engine",
+                description: "Optimized metadata, speed, and indexability",
+                color: "pink-400"
+              },
+              {
+                emoji: "💬",
+                title: "Built-in Contact Forms",
+                description: "Get leads straight to your dashboard",
+                color: "emerald-400"
+              },
+              {
+                emoji: "🛍️",
+                title: "E-Commerce (Coming Soon)",
+                description: "Product pages, cart, and checkout coming next rollout",
+                color: "amber-400"
+              },
+              {
+                emoji: "🌐",
+                title: "Custom Domain Ready",
+                description: "Plug your .com into WebX in 2 clicks",
+                color: "indigo-400"
+              }
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className="group relative p-8 rounded-xl bg-gray-900/40 border border-gray-800 hover:border-gray-700 transition-all duration-300 overflow-hidden hover:shadow-lg hover:shadow-[var(--color)]/10"
+                style={{ '--color': `rgb(var(--${feature.color.split('-')[0]}-400))` } as React.CSSProperties}
+              >
+                <div className={`absolute inset-0 bg-gradient-to-br from-${feature.color}/5 to-${feature.color.split('-')[0]}-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                <div className="relative z-10">
+                  <div className={`text-4xl mb-5 text-${feature.color} group-hover:scale-110 transition-all duration-300`}>
+                    {feature.emoji}
+                  </div>
+                  <h4 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
+                    {feature.title}
+                  </h4>
+                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       
 
       <Footer />
