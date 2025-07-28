@@ -188,8 +188,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import HeaderWhite from "@/components/HeaderWhite";
 import Footer from "@/components/Footer";
-import WebXBackground from "@/components/WebXBackground";
+//import WebXBackground from "@/components/WebXBackground";
 import logoWebX from "../assets/icon-webx-n.svg";
+import CircleBackground from "@/components/TriangleBackground";
 
 export default function FusionWebX() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -208,7 +209,13 @@ export default function FusionWebX() {
       {/* 1. Hero Section */}
       <div ref={heroRef}>
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-          <WebXBackground />
+          {/* WebX Background - positioned absolutely within hero section */}
+          
+            {/* <WebXBackground /> */}
+            <CircleBackground />
+          
+
+          {/* Content with higher z-index */}
           <div className="relative z-20 max-w-4xl mx-auto px-6 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
               <span className="text-sm text-gray-300">AIBAMS Fusion Suite</span>
@@ -234,6 +241,35 @@ export default function FusionWebX() {
           </div>
         </section>
       </div>
+
+
+      {/* 2. Overview Section */}
+      <section className="relative py-24 px-6 sm:px-8 bg-black overflow-hidden">
+        {/* Section border dividers */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-800 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-800 to-transparent"></div>
+
+        {/* Glow effects */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-900/30 blur-[80px]"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-purple-900/30 blur-[100px]"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+              {/* <span className="inline-block mr-3">🚀</span> */}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Overview
+              </span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Fusion-WebX transforms your ideas into a fully functional website — instantly. With AI-generated layouts, content, and hosting built-in, you can go from concept to live site in minutes. No code, no clutter, just conversion-ready design.
+            </p>
+          </div>
+        </div>
+      </section>
 
       
 
