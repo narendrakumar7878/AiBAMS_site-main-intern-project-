@@ -300,6 +300,7 @@ export default function FusionMail() {
 
 
             {/* 5. Tools Checklist - Modern Linear Layout */}
+            
             <section className="py-20 px-6 sm:px-8 bg-black relative overflow-hidden">
                 {/* Top Section Divider */}
                 <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
@@ -309,7 +310,7 @@ export default function FusionMail() {
                     <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4yIj48cGF0aCBkPSJNMCAwaDQwdjQwSDB6Ii8+PC9nPjwvZz48L3N2Zz4=')]"></div>
                 </div>
 
-                <div className="relative z-10 max-w-5xl mx-auto">
+                <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6">
                     {/* Section header */}
                     <div className="text-center mb-16">
                         <div className="text-xs tracking-widest text-gray-400 mb-3 font-medium"># EMAIL PRODUCTIVITY</div>
@@ -338,7 +339,6 @@ export default function FusionMail() {
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Pre-designed templates for everyday replies and common scenarios.
                                 </p>
-                                
                             </div>
                         </div>
 
@@ -354,7 +354,6 @@ export default function FusionMail() {
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Conversational email flow that keeps discussions organized and accessible.
                                 </p>
-                                
                             </div>
                         </div>
 
@@ -370,7 +369,6 @@ export default function FusionMail() {
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Automated notifications from your CRM integration.
                                 </p>
-                                
                             </div>
                         </div>
 
@@ -386,7 +384,6 @@ export default function FusionMail() {
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Keep important threads easily accessible when you need them.
                                 </p>
-                                
                             </div>
                         </div>
 
@@ -402,13 +399,11 @@ export default function FusionMail() {
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Advanced protection for your sensitive communications.
                                 </p>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
 
 
 

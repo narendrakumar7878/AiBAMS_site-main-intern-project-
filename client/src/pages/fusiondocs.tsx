@@ -276,7 +276,7 @@ export default function FusionDocs() {
                     <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4yIj48cGF0aCBkPSJNMCAwaDQwdjQwSDB6Ii8+PC9nPjwvZz48L3N2Zz4=')]"></div>
                 </div>
 
-                <div className="relative z-10 max-w-5xl mx-auto">
+                <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-0 md:w-4/5 lg:w-3/5">
                     {/* Section header */}
                     <div className="text-center mb-16">
                         <div className="text-xs tracking-widest text-gray-400 mb-3 font-medium"># WORKFLOW ENHANCEMENTS</div>
