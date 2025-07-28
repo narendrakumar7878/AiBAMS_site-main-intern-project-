@@ -8,6 +8,16 @@ export default {
       fontFamily: {
         sans: ['Montserrat', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
+      filter: {
+        'green': 'brightness(0) saturate(100%) invert(69%) sepia(100%) saturate(2000%) hue-rotate(60deg) brightness(1.2) contrast(1)',
+        'orange': 'brightness(0) saturate(100%) invert(75%) sepia(100%) saturate(2000%) hue-rotate(15deg) brightness(1.1) contrast(1)',
+        'purple': 'brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(2000%) hue-rotate(260deg) brightness(1.1) contrast(1)',
+        'blue': 'brightness(0) saturate(100%) invert(65%) sepia(100%) saturate(1500%) hue-rotate(140deg) brightness(1) contrast(1)',
+        'indigo': 'brightness(0) saturate(100%) invert(41%) sepia(100%) saturate(1500%) hue-rotate(210deg) brightness(1) contrast(1)',
+        'red': 'brightness(0) saturate(100%) invert(35%) sepia(100%) saturate(2000%) hue-rotate(345deg) brightness(1.2) contrast(1)',
+      },
+
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -82,6 +92,14 @@ export default {
             height: "0",
           },
         },
+        bounce: {
+          '0%, 100%': {
+            transform: 'translateY(0)'
+          },
+          '50%': {
+            transform: 'translateY(-5px)'
+          },
+        }
 
 
         
@@ -92,6 +110,7 @@ export default {
 
         // ✅ ADD THIS:
         "spin-slow": "spin 20s linear infinite",
+        bounce: 'bounce 2s infinite',
       },
       // ✅ ADD THIS:
       dropShadow: {

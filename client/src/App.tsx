@@ -17,7 +17,11 @@ import Legal from "./pages/legal";
 import Blog from "./pages/blog";
 import SitemapFusion from "./pages/sitemapfusion";
 import WebX from "./pages/webx";
-
+import FusionChat from "./pages/fusionchat";
+import FusionDocs from "./pages/fusiondocs";
+import FusionSheets from "./pages/fusionsheets";
+import FusionMail from "./pages/fusionmail";
+import FusionDrive from "./pages/fusiondrive";
 import { Component } from "lucide-react";
 
 function Router() {
@@ -36,6 +40,11 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/sitemapfusion" component={SitemapFusion} />
       <Route path="/webx" component={WebX} />
+      <Route path="/fusionchat" component={FusionChat} />
+      <Route path="/fusiondocs" component={FusionDocs} />
+      <Route path="/fusionsheets" component={FusionSheets} />
+      <Route path="/fusionmail" component={FusionMail} />
+      <Route path="/fusiondrive" component={FusionDrive} />
       <Route component={NotFound} />
     </Switch>
   );

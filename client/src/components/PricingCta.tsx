@@ -56,9 +56,14 @@ export default function PricingCta() {
         </div>
 
         {/* Main heading */}
-        <div className="text-center mb-12 flex justify-center flex-col items-center">
-          <img src={Fs} alt="Fusion Suite" className="w-1/3 " />
-          <p className="text-md md:text-l text-gray-300 my-6">
+        {/* Main heading */}
+        <div className="text-center mb-8 sm:mb-12 flex justify-center flex-col items-center">
+          <img
+            src={Fs}
+            alt="Fusion Suite"
+            className="w-2/3 sm:w-1/2 md:w-1/3 max-w-xs"
+          />
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-4 sm:mt-6 mb-2 sm:mb-0">
             The Ultimate AI Business Platform
           </p>
         </div>
@@ -95,29 +100,39 @@ export default function PricingCta() {
               <span className="pointer-events-none absolute inset-0 border-transparent group-hover:shadow-[0_4px_32px_0_rgba(255,200,0,0.15)] transition-all duration-300"></span>
             </div>
           </div>
-          <div className="w-full border border-zinc-800 mt-16 p-12 bg-black shadow flex flex-col items-center">
-            <h3 className="text-[1.875rem] font-bold text-white mb-4 text-center">Unlock Lifetime Access to Fusion Suite</h3>
-            <p className="text-gray-400 text-lg mb-8 text-center">Join the future of work with India’s first AI business platform. Early access members get full access to the first 6 tools, bonus perks, and a lifetime discount.</p>
-            <div className="flex justify-center mb-12">
-              <div className="relative group cursor-pointer">
-                <div className="absolute -inset-1 rounded-full blur-xl opacity-40 transition-opacity duration-300 bg-gradient-to-r from-[#9978ff] via-[#ff96dd] via-[#ffa184] via-[#ffff55] via-[#71f800] to-[#00bbff] group-hover:from-[#ffa184] group-hover:via-[#ff96dd] group-hover:via-[#ffa184] group-hover:via-[#ffff55] group-hover:via-[#71f800] group-hover:via-[#00bbff] group-hover:to-[#00bbff]"></div>
-                <div className="relative p-[2px] bg-gradient-to-r from-[#9978ff] via-[#ff96dd] via-[#ffa184] via-[#ffff55] via-[#71f800] to-[#00bbff] rounded-full transition-opacity duration-300 group-hover:from-[#ffa184] group-hover:via-[#ff96dd] group-hover:via-[#ffa184] group-hover:via-[#ffff55] group-hover:via-[#71f800] group-hover:via-[#00bbff] group-hover:to-[#00bbff]">
-                  <div className="bg-black px-8 py-3 rounded-full group-hover:bg-black/80 transition-colors duration-300">
-                    <span className="text-lg font-bold tracking-wider uppercase text-white group-hover:text-white/90 transition-colors duration-300">🎯 Claim Your Spot Now</span>
+
+
+          <div className="w-full border border-zinc-800 mt-8 sm:mt-16 p-6 sm:p-8 md:p-12 bg-black shadow-xl flex flex-col items-center rounded-xl sm:rounded-2xl">
+            <h3 className="text-2xl sm:text-[1.875rem] md:text-3xl font-bold text-white mb-3 sm:mb-4 text-center">
+              Unlock Lifetime Access to Fusion Suite
+            </h3>
+            <p className="text-gray-400 text-base sm:text-lg mb-6 sm:mb-8 text-center max-w-2xl px-2">
+              Join the future of work with India's first AI business platform. Early access members get full access to the first 6 tools, bonus perks, and a lifetime discount.
+            </p>
+
+            <div className="flex justify-center mb-8 sm:mb-12 w-full px-2">
+              <div className="relative group cursor-pointer w-full max-w-md">
+                <div className="absolute -inset-1 rounded-full blur-xl opacity-40 transition-opacity duration-300 bg-gradient-to-r from-[#9978ff] via-[#ff96dd] via-[#ffa184] via-[#ffff55] via-[#71f800] to-[#00bbff] group-hover:opacity-60"></div>
+                <div className="relative p-[2px] bg-gradient-to-r from-[#9978ff] via-[#ff96dd] via-[#ffa184] via-[#ffff55] via-[#71f800] to-[#00bbff] rounded-full transition-all duration-300 group-hover:brightness-110 w-full">
+                  <div className="bg-black px-6 py-3 sm:px-8 sm:py-3 rounded-full group-hover:bg-black/80 transition-colors duration-300 w-full text-center">
+                    <span className="text-base sm:text-lg font-bold tracking-wider uppercase text-white group-hover:text-white/90 transition-colors duration-300">
+                      <span className="inline-block animate-bounce">🎯</span> Claim Your Support Now
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-10 text-gray-400 text-base mt-2">
-              <div className="flex items-center gap-2">
+
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-10 text-gray-400 text-sm sm:text-base mt-2 w-full px-4">
+              <div className="flex items-center gap-2 whitespace-nowrap">
                 <span className="text-green-400 text-xl">✓</span>
                 <span>30-Day Money Back</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 whitespace-nowrap">
                 <span className="text-green-400 text-xl">✓</span>
                 <span>Instant Access</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 whitespace-nowrap">
                 <span className="text-green-400 text-xl">✓</span>
                 <span>No Hidden Fees</span>
               </div>

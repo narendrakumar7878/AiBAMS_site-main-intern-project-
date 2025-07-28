@@ -43,7 +43,7 @@ export default function CapabilitiesSection() {
       icon: MessageCircle,
       title: " Fusion-WebX",
       description: "AI Website Builder :  Launch stunning websites in minutes with AI-generated content, SEO-optimized structure, and built-in forms. No coding needed.",
-       status: "active",
+      status: "active",
       color: "blue"
     },
     {
@@ -114,7 +114,7 @@ export default function CapabilitiesSection() {
   };
 
   return (
-    <section ref={sectionRef} className="w-full bg-black py-24 px-4 pb-0 relative overflow-hidden">
+    <section ref={sectionRef} className="w-full bg-black py-14 px-4 pb-0 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-500/5 to-pink-500/5 rounded-full blur-3xl animate-pulse"></div>
@@ -142,22 +142,22 @@ export default function CapabilitiesSection() {
       >
         {/* Section header (no glass box) */}
         <div className="mb-16 text-center">
-          <div className="text-xs tracking-widest text-gray-400 mb-2 font-medium"># CAPABILITIES</div>
+          <div className="text-xs tracking-widest text-gray-400 mb-2  font-medium"># CAPABILITIES</div>
           <h2 className="text-4xl md:text-[3rem] font-bold text-white mb-6">AI to Supercharge Your Business
           </h2>
           <p className="text-[1.125rem] text-gray-300 max-w-3xl mx-auto">
-          Unlock the true potential of your business with our AI-powered app suite—designed to simplify, scale, and speed up everything from communication to data management.
+            Unlock the true potential of your business with our AI-powered app suite—designed to simplify, scale, and speed up everything from communication to data management.
           </p>
         </div>
         {/* Capabilities grid */}
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {/* Divider lines for 3x2 grid */}
-          <div className="hidden lg:block absolute top-0 left-1/3 w-px h-full bg-white/10 z-20" style={{left: '33.33%'}}></div>
-          <div className="hidden lg:block absolute top-0 left-2/3 w-px h-full bg-white/10 z-20" style={{left: '66.66%'}}></div>
-          <div className="hidden md:block absolute left-0 top-1/2 w-full h-px bg-white/10 z-20" style={{top: '50%'}}></div>
+          <div className="hidden lg:block absolute top-0 left-1/3 w-px h-full bg-white/10 z-20" style={{ left: '33.33%' }}></div>
+          <div className="hidden lg:block absolute top-0 left-2/3 w-px h-full bg-white/10 z-20" style={{ left: '66.66%' }}></div>
+          <div className="hidden md:block absolute left-0 top-1/2 w-full h-px bg-white/10 z-20" style={{ top: '50%' }}></div>
           {/* Capability boxes */}
           {capabilities.map((capability, index) => (
-            <div 
+            <div
               key={index}
               className="group relative p-8 rounded-2xl border border-transparent"
             >
@@ -167,27 +167,26 @@ export default function CapabilitiesSection() {
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-4">
                   <capability.icon className={`w-8 h-8 transition-colors duration-300`} />
-          </div>
+                </div>
 
                 <h3 className="text-xl font-semibold mb-2 flex items-center text-white group-hover:text-white transition-colors duration-300" style={{ fontSize: '1.125rem' }}>
                   {capability.title}
                   {getStatusBadge(capability.status)}
                 </h3>
-                
+
                 <p className="text-sm leading-relaxed mb-4 text-gray-500 group-hover:text-white transition-colors duration-300" style={{ fontSize: '0.875rem' }}>
                   {capability.description}
                 </p>
                 {/* Add the span for Fusion-Chat only */}
                 <div className="flex items-center text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300" style={{ fontSize: '0.75rem' }}>
-                  
-          </div>
-          </div>
-          </div>
+
+                </div>
+              </div>
+            </div>
           ))}
         </div>
-        
       </div>
-      <hr className="border-t border-zinc-800 mt-24" />
+      <hr className="border-t border-zinc-800" />
     </section>
   );
 }

@@ -95,7 +95,7 @@ export default function LatestNewsSection() {
         </div> */}
 
         {/* News grid my code starts upadte section for new by me  */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-8">
           {news.map((item, index) => {
             const Icon = item.icon;
             return (

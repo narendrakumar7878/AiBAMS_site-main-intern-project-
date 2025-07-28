@@ -7,6 +7,7 @@ import LatestNewsSection from "@/components/LatestNewsSection";
 import AboutAIBAMSSection from "@/components/AboutAIBAMSSection";
 import LaunchSection from "@/components/LaunchSection";
 import gradientDivider from '../assets/gradient-divider.png';
+// import HeaderWhite from "@/components/HeaderWhite";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,10 +17,10 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.pageYOffset;
-      
+
       // Glass effect for header
       setIsScrolled(scrolled > 50);
-      
+
       // Parallax effect for light source
       const lightEffect = document.querySelector(".bg-light-source");
       if (lightEffect) {
@@ -45,18 +46,18 @@ export default function Home() {
   }, [heroRef]);
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-gray-900 ">
       {/* Header */}
       <Header white={headerWhite} />
+      {/* <HeaderWhite /> */}
       <div ref={heroRef}>
         <HeroSection />
       </div>
       <AboutAIBAMSSection />
-      
-      <LaunchSection/>
-      <CapabilitiesSection/>
+      <LaunchSection />
+      <CapabilitiesSection />
       <LatestNewsSection />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
