@@ -361,6 +361,66 @@ export default function FusionWebX() {
       </section>
 
       
+      {/* 4. Use Cases Section - Divided Layout */}
+      <section className="py-20 px-6 sm:px-8 bg-black relative overflow-hidden">
+        {/* Glow Effects */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-900/20 blur-[100px]"></div>
+          <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-purple-900/20 blur-[100px]"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16 px-4">
+            <div className="text-xs tracking-widest text-gray-400 mb-3 font-medium"># WHO'S USING WEBX?</div>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              👤 Real Users, Real Impact
+            </h3>
+          </div>
+
+          {/* 4-Column Grid with Dividers */}
+          <div className="grid grid-cols-1 md:grid-cols-4 px-2 gap-0 md:divide-x md:divide-gray-800">
+            {[
+              { emoji: "🎨", title: "Solo Creators & Influencers", description: "Craft stunning personal brands and portfolios, no devs required", color: "blue" },
+              { emoji: "🏢", title: "Local Businesses", description: "Establish online presence, collect leads, and grow locally", color: "purple" },
+              { emoji: "🧪", title: "Startup Founders", description: "Need an MVP or product launch page fast? This is it", color: "pink" },
+              { emoji: "🎯", title: "Digital Agencies", description: "Build & deploy client websites at scale — with zero code", color: "green" }
+            ].map((useCase, index) => (
+              <div key={index} className="group relative p-8 text-center">
+                {/* Vertical divider - only between items */}
+                {index !== 0 && (
+                  <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-gray-700 to-transparent"></div>
+                )}
+
+                <div className="flex flex-col items-center">
+                  <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                    {useCase.emoji}
+                  </div>
+                  <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+                    {useCase.title}
+                  </h4>
+                  <p className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">
+                    {useCase.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom Divider */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+      </section>
+
+
+
+
+      
+
+
+
+
+
 
       <Footer />
     </div>
