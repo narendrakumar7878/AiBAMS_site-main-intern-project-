@@ -301,6 +301,7 @@ export default function FusionMail() {
 
             {/* 5. Tools Checklist - Modern Linear Layout */}
             
+            {/* 5. Tools Checklist - Modern Linear Layout */}
             <section className="py-20 px-6 sm:px-8 bg-black relative overflow-hidden">
                 {/* Top Section Divider */}
                 <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
@@ -446,7 +447,6 @@ export default function FusionMail() {
                 <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
             </section>
             
-
             <Footer />
         </div>
     );
