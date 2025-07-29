@@ -299,7 +299,7 @@ export default function FusionMail() {
 
 
 
-            {/* 5. Tools Checklist - Modern Linear Layout */}
+            
             
             {/* 5. Tools Checklist - Modern Linear Layout */}
             <section className="py-20 px-6 sm:px-8 bg-black relative overflow-hidden">
@@ -335,7 +335,7 @@ export default function FusionMail() {
                             </div>
                             <div className="flex-1">
                                 <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
-                                    Email Templates
+                                    Templates for Everyday Replies
                                 </h4>
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Pre-designed templates for everyday replies and common scenarios.
@@ -350,7 +350,7 @@ export default function FusionMail() {
                             </div>
                             <div className="flex-1">
                                 <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors duration-300">
-                                    Chat-Like Threads
+                                    Built-in Chat-Like Threads
                                 </h4>
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Conversational email flow that keeps discussions organized and accessible.
@@ -365,7 +365,8 @@ export default function FusionMail() {
                             </div>
                             <div className="flex-1">
                                 <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-green-400 transition-colors duration-300">
-                                    Billing Alerts
+                                    Billing Alerts & Deal Follow-ups from CRM
+
                                 </h4>
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Automated notifications from your CRM integration.
@@ -380,7 +381,7 @@ export default function FusionMail() {
                             </div>
                             <div className="flex-1">
                                 <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-yellow-400 transition-colors duration-300">
-                                    Pinned Conversations
+                                    Pinned Conversations for Teams
                                 </h4>
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Keep important threads easily accessible when you need them.
@@ -395,7 +396,7 @@ export default function FusionMail() {
                             </div>
                             <div className="flex-1">
                                 <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-red-400 transition-colors duration-300">
-                                    Enterprise Security
+                                    2FA + End-to-End Encryption
                                 </h4>
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Advanced protection for your sensitive communications.
@@ -405,6 +406,218 @@ export default function FusionMail() {
                     </div>
                 </div>
             </section>
+
+
+
+            {/* 7. Connected Workflow Section */}
+            <section className="py-24 px-6 sm:px-8 bg-black relative overflow-hidden">
+                {/* Top divider line */}
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+
+                {/* Background elements */}
+                <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-900/30 blur-[80px]"></div>
+                    <div className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-purple-900/30 blur-[100px]"></div>
+                </div>
+
+                <div className="relative z-10 max-w-6xl mx-auto">
+                    {/* Section Header */}
+                    <div className="text-center mb-16">
+                        <div className="text-xs tracking-widest text-gray-400 mb-3 font-medium"># SEAMLESS INTEGRATION</div>
+                        <h3 className="text-3xl font-bold text-white mb-4">
+                            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Connected</span> to Your Workflow
+                        </h3>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            Fusion-Mail works seamlessly with the entire Fusion Suite
+                        </p>
+                    </div>
+
+                    {/* Connected Apps Table */}
+                    <div className="rounded-xl border border-gray-800 overflow-hidden bg-gray-900/50 backdrop-blur-sm max-w-3xl mx-auto">
+                        <table className="w-full">
+                            <thead className="border-b border-gray-800">
+                                <tr>
+                                    <th className="py-4 px-6 text-left text-sm font-medium text-gray-300">Fusion App</th>
+                                    <th className="py-4 px-6 text-left text-sm font-medium text-gray-300">What You Can Do</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gray-800">
+                                {/* Fusion-Docs */}
+                                <tr className="hover:bg-gray-800/50 transition-colors">
+                                    <td className="py-4 px-6 font-medium text-white flex items-center gap-3">
+                                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-blue-900/30 flex items-center justify-center">📄</span>
+                                        Fusion-Docs
+                                    </td>
+                                    <td className="py-4 px-6 text-gray-400">Preview or attach docs without leaving inbox</td>
+                                </tr>
+
+                                {/* Fusion-Drive */}
+                                <tr className="hover:bg-gray-800/50 transition-colors">
+                                    <td className="py-4 px-6 font-medium text-white flex items-center gap-3">
+                                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-purple-900/30 flex items-center justify-center">📁</span>
+                                        Fusion-Drive
+                                    </td>
+                                    <td className="py-4 px-6 text-gray-400">Auto-upload attachments</td>
+                                </tr>
+
+                                {/* Fusion-Sheets */}
+                                <tr className="hover:bg-gray-800/50 transition-colors">
+                                    <td className="py-4 px-6 font-medium text-white flex items-center gap-3">
+                                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-green-900/30 flex items-center justify-center">📊</span>
+                                        Fusion-Sheets
+                                    </td>
+                                    <td className="py-4 px-6 text-gray-400">Insert live data charts in email bodies</td>
+                                </tr>
+
+                                {/* Fusion-Chat */}
+                                <tr className="hover:bg-gray-800/50 transition-colors">
+                                    <td className="py-4 px-6 font-medium text-white flex items-center gap-3">
+                                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-pink-900/30 flex items-center justify-center">💬</span>
+                                        Fusion-Chat
+                                    </td>
+                                    <td className="py-4 px-6 text-gray-400">Ask AI to summarize threads or draft replies</td>
+                                </tr>
+
+                                {/* Fusion-CRM */}
+                                <tr className="hover:bg-gray-800/50 transition-colors">
+                                    <td className="py-4 px-6 font-medium text-white flex items-center gap-3">
+                                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-yellow-900/30 flex items-center justify-center">👥</span>
+                                        Fusion-CRM
+                                    </td>
+                                    <td className="py-4 px-6 text-gray-400">Get context about leads directly from email threads</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                {/* Bottom divider line */}
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+            </section>
+
+
+
+
+
+            {/* Role-Based Email Section */}
+            <section className="py-24 px-6 sm:px-8 bg-black relative overflow-hidden">
+                
+                <div className="relative z-10 max-w-6xl mx-auto">
+                    {/* Section Header */}
+                    <div className="text-center mb-16">
+                        <div className="text-xs tracking-widest text-gray-400 mb-3 font-medium"># TAILORED EXPERIENCE</div>
+                        <h3 className="text-3xl font-bold text-white mb-4">
+                            <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">Email</span> That Understands Roles
+                        </h3>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            Customized workflows for different team members
+                        </p>
+                    </div>
+
+
+
+                    {/* Roles Grid - 5 columns (2 on mobile) */}
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-4 px-4">
+                        {/* Founders */}
+                        <div className="group p-5 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-blue-500/30 transition-all">
+                            <div className="w-12 h-12 rounded-full bg-blue-900/20 mb-3 flex items-center justify-center text-2xl mx-auto">
+                                👔
+                            </div>
+                            <h4 className="text-lg font-semibold text-white text-center mb-2 group-hover:text-blue-400">
+                                Founders
+                            </h4>
+                            <ul className="space-y-1 text-xs text-gray-400">
+                                <li className="flex items-start">
+                                    <span className="text-blue-400 mr-1">•</span>
+                                    Investor communications
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="text-blue-400 mr-1">•</span>
+                                    Cold outreach
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Support Teams */}
+                        <div className="group p-5 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-purple-500/30 transition-all">
+                            <div className="w-12 h-12 rounded-full bg-purple-900/20 mb-3 flex items-center justify-center text-2xl mx-auto">
+                                🛠️
+                            </div>
+                            <h4 className="text-lg font-semibold text-white text-center mb-2 group-hover:text-purple-400">
+                                Support
+                            </h4>
+                            <ul className="space-y-1 text-xs text-gray-400">
+                                <li className="flex items-start">
+                                    <span className="text-purple-400 mr-1">•</span>
+                                    Manage support inbox
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="text-purple-400 mr-1">•</span>
+                                    Quick tags
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Sales Teams */}
+                        <div className="group p-5 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-pink-500/30 transition-all">
+                            <div className="w-12 h-12 rounded-full bg-pink-900/20 mb-3 flex items-center justify-center text-2xl mx-auto">
+                                💰
+                            </div>
+                            <h4 className="text-lg font-semibold text-white text-center mb-2 group-hover:text-pink-400">
+                                Sales
+                            </h4>
+                            <ul className="space-y-1 text-xs text-gray-400">
+                                <li className="flex items-start">
+                                    <span className="text-pink-400 mr-1">•</span>
+                                    Follow-up reminders
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="text-pink-400 mr-1">•</span>
+                                    Deal templates
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Admins */}
+                        <div className="group p-5 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-yellow-500/30 transition-all">
+                            <div className="w-12 h-12 rounded-full bg-yellow-900/20 mb-3 flex items-center justify-center text-2xl mx-auto">
+                                🔐
+                            </div>
+                            <h4 className="text-lg font-semibold text-white text-center mb-2 group-hover:text-yellow-400">
+                                Admins
+                            </h4>
+                            <ul className="space-y-1 text-xs text-gray-400">
+                                <li className="flex items-start">
+                                    <span className="text-yellow-400 mr-1">•</span>
+                                    Filtered internal comms
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Freelancers */}
+                        <div className="group p-5 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-green-500/30 transition-all">
+                            <div className="w-12 h-12 rounded-full bg-green-900/20 mb-3 flex items-center justify-center text-2xl mx-auto">
+                                🎨
+                            </div>
+                            <h4 className="text-lg font-semibold text-white text-center mb-2 group-hover:text-green-400">
+                                Freelancers
+                            </h4>
+                            <ul className="space-y-1 text-xs text-gray-400">
+                                <li className="flex items-start">
+                                    <span className="text-green-400 mr-1">•</span>
+                                    Branded email
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="text-green-400 mr-1">•</span>
+                                    Domain integration
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
 
 

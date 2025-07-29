@@ -328,6 +328,88 @@ export default function FusionDrive() {
             </section>
 
 
+            {/* 7. Connected Suite Section - Modern */}
+            <section className="py-24 px-6 sm:px-8 bg-black relative overflow-hidden">
+                {/* Top divider line */}
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+
+                {/* Background elements */}
+                <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-900/30 blur-[80px]"></div>
+                    <div className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-purple-900/30 blur-[100px]"></div>
+                </div>
+
+                <div className="relative z-10 max-w-6xl mx-auto">
+                    {/* Section Header */}
+                    <div className="text-center mb-16">
+                        <div className="text-xs tracking-widest text-gray-400 mb-3 font-medium"># CONNECTED ECOSYSTEM</div>
+                        <h3 className="text-3xl font-bold text-white mb-4">
+                            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Connected</span> Across the Suite
+                        </h3>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            Everything you store can be used across the Fusion ecosystem
+                        </p>
+                    </div>
+
+                    {/* Connected Apps Grid */}
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+                        {/* Fusion-Mail */}
+                        <div className="group p-6 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-blue-500/30 transition-all hover:shadow-lg hover:shadow-blue-500/10">
+                            <div className="w-12 h-12 rounded-lg bg-blue-900/20 flex items-center justify-center text-2xl mb-4 group-hover:bg-blue-500/20 transition-colors">
+                                ✉️
+                            </div>
+                            <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                                Fusion-Mail
+                            </h4>
+                            <p className="text-sm text-gray-400">
+                                Attach documents to outgoing mail directly from Drive
+                            </p>
+                        </div>
+
+                        {/* Fusion-Docs */}
+                        <div className="group p-6 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-purple-500/30 transition-all hover:shadow-lg hover:shadow-purple-500/10">
+                            <div className="w-12 h-12 rounded-lg bg-purple-900/20 flex items-center justify-center text-2xl mb-4 group-hover:bg-purple-500/20 transition-colors">
+                                📝
+                            </div>
+                            <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                                Fusion-Docs
+                            </h4>
+                            <p className="text-sm text-gray-400">
+                                Embed or link reference materials in your docs
+                            </p>
+                        </div>
+
+                        {/* Fusion-WebX */}
+                        <div className="group p-6 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-emerald-500/30 transition-all hover:shadow-lg hover:shadow-emerald-500/10">
+                            <div className="w-12 h-12 rounded-lg bg-emerald-900/20 flex items-center justify-center text-2xl mb-4 group-hover:bg-emerald-500/20 transition-colors">
+                                🌐
+                            </div>
+                            <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+                                Fusion-WebX
+                            </h4>
+                            <p className="text-sm text-gray-400">
+                                Sync media, images, and site backups
+                            </p>
+                        </div>
+
+                        {/* Fusion-Chat */}
+                        <div className="group p-6 rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-900/20 hover:border-pink-500/30 transition-all hover:shadow-lg hover:shadow-pink-500/10">
+                            <div className="w-12 h-12 rounded-lg bg-pink-900/20 flex items-center justify-center text-2xl mb-4 group-hover:bg-pink-500/20 transition-colors">
+                                💬
+                            </div>
+                            <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-pink-400 transition-colors">
+                                Fusion-Chat
+                            </h4>
+                            <p className="text-sm text-gray-400">
+                                Let AI scan, summarize, and analyze stored files instantly
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Bottom divider line */}
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+            </section>
 
 
 

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import HeaderWhite from "@/components/HeaderWhite";
 import Footer from "@/components/Footer";
 import DocsBackground from "@/components/DocsBackground";
@@ -52,7 +52,7 @@ export default function FusionDocs() {
                                 Fusion Docs
                             </span>
                         </h1>
-    
+
 
 
 
@@ -62,6 +62,8 @@ export default function FusionDocs() {
                     </div>
                 </section>
             </div>
+
+
 
             {/* Overview Section */}
             <section className="w-full py-28 px-6 sm:px-8 bg-black relative overflow-hidden">
@@ -99,8 +101,8 @@ export default function FusionDocs() {
 
 
             {/* 3. Key Features Section */}
-            {/* Modern Features Section */}
-            {/* Premium Features Section with Delicate Dividers */}
+
+
             <section className="py-24 px-6 sm:px-8 bg-black relative">
                 {/* Ultra-thin section divider above */}
                 <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-800 to-transparent"></div>
@@ -164,10 +166,10 @@ export default function FusionDocs() {
 
 
 
-            
+
 
             {/* 4. Use Cases Section - Modern Design */}
-            
+
             <section className="w-full py-20 px-6 sm:px-8 lg:px-12 bg-black relative overflow-hidden">
                 {/* Background gradient elements */}
                 <div className="absolute inset-0 opacity-10">
@@ -268,7 +270,7 @@ export default function FusionDocs() {
 
 
 
-            
+
             {/* 5. Features - Modern Linear Layout */}
             <section className="py-20 px-6 sm:px-8 bg-black relative overflow-hidden">
                 {/* Subtle grid background */}
@@ -330,7 +332,8 @@ export default function FusionDocs() {
                             </div>
                             <div className="flex-1">
                                 <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors duration-300">
-                                    Document History
+                                    Document History & Version Compare
+
                                 </h4>
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Scroll back through every change. Restore older versions in 1 click.
@@ -345,10 +348,26 @@ export default function FusionDocs() {
                             </div>
                             <div className="flex-1">
                                 <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-yellow-400 transition-colors duration-300">
-                                    Built-in Citation
+                                    Built-in Citation & Linking
                                 </h4>
                                 <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                                     Auto-format references and link to Fusion-Drive files or external URLs.
+                                </p>
+                            </div>
+                        </div>
+                        {/* Feature 5 */}
+                        <div className="relative flex flex-col md:flex-row gap-6 group">
+                            <div className="flex-shrink-0 flex items-start md:items-center justify-center w-10 h-10 rounded-full bg-gray-900 border border-gray-800 text-red-400 text-xl p-2 group-hover:bg-red-500/20 transition-colors duration-300">
+                                🔒
+                            </div>
+                            <div className="flex-1">
+                                <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-red-400 transition-colors duration-300">
+                                    Password-Protect & Share with Expiry
+
+                                </h4>
+                                <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+
+                                    Control document access, even outside your team.
                                 </p>
                             </div>
                         </div>
@@ -361,6 +380,107 @@ export default function FusionDocs() {
 
 
 
+            {/* Perfect For - Auto-Scrolling Carousel */}
+            <section className="py-20 px-6 sm:px-8 bg-black relative overflow-hidden">
+                {/* Background elements */}
+                <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-900/20 rounded-full filter blur-[100px]"></div>
+                    <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-purple-900/20 rounded-full filter blur-[100px]"></div>
+                </div>
+
+                <div className="relative z-10 max-w-7xl mx-auto">
+                    {/* Section header */}
+                    <div className="text-center mb-12 px-4">
+                        <div className="text-xs tracking-widest text-gray-400 mb-3 font-medium"># PERFECT FOR</div>
+                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                            🎯 Perfect For Your Team's Needs
+                        </h3>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            Designed to streamline workflows for professionals across your organization
+                        </p>
+                    </div>
+
+                    {/* Carousel container */}
+                    <div className="relative px-4">
+                        {/* Scrollable track */}
+                        <div className="overflow-hidden py-4">
+                            <div className="flex gap-6 animate-scroll">
+                                {[...Array(3)].map((_, loopIndex) => (
+                                    <React.Fragment key={`loop-${loopIndex}`}>
+                                        {[
+                                            {
+                                                emoji: '👔',
+                                                title: 'Founders',
+                                                description: 'Writing funding proposals and investor updates with professional templates',
+                                                color: 'blue'
+                                            },
+                                            {
+                                                emoji: '👥',
+                                                title: 'HR Teams',
+                                                description: 'Creating and distributing policy handbooks with version control',
+                                                color: 'purple'
+                                            },
+                                            {
+                                                emoji: '✍️',
+                                                title: 'Content Writers',
+                                                description: 'Drafting blogs, articles, and presentations with collaborative editing',
+                                                color: 'pink'
+                                            },
+                                            {
+                                                emoji: '📊',
+                                                title: 'Account Managers',
+                                                description: 'Compiling client reports and performance dashboards',
+                                                color: 'green'
+                                            },
+                                            {
+                                                emoji: '📋',
+                                                title: 'Admins',
+                                                description: 'Maintaining and organizing company records and documentation',
+                                                color: 'yellow'
+                                            }
+                                        ].map((item, index) => (
+                                            <div
+                                                key={`${item.title}-${loopIndex}`}
+                                                className="flex-shrink-0 w-72 p-6 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all duration-300"
+                                            >
+                                                <div className={`text-3xl mb-4 text-${item.color}-400`}>{item.emoji}</div>
+                                                <h4 className="text-xl font-semibold text-white mb-2">{item.title}</h4>
+                                                <p className="text-gray-400">{item.description}</p>
+                                            </div>
+                                        ))}
+                                    </React.Fragment>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Gradient fade edges - mobile only */}
+                        <div className="sm:hidden absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-black to-transparent z-20"></div>
+                        <div className="sm:hidden absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-black to-transparent z-20"></div>
+                    </div>
+                </div>
+
+                {/* Animation styles */}
+                <style>{`
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-250px * 5 * 3)); }
+    }
+    .animate-scroll {
+      display: flex;
+      animation: scroll 30s linear infinite;
+      width: calc(250px * 5 * 3);
+    }
+    .animate-scroll:hover {
+      animation-play-state: paused;
+    }
+  `}</style>
+
+                {/* Section bottom divider */}
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+            </section>
+
+
+
 
 
             {/* CTA Section */}
@@ -368,7 +488,7 @@ export default function FusionDocs() {
                 <div className="flex flex-col items-center max-w-2xl mx-auto text-center">
                     <div className="text-xs tracking-widest text-gray-400 mb-2 font-medium"># PRODUCTIVITY BOOST</div>
                     <h3 className="text-[1.875rem] font-bold text-white mb-6">
-                         Simpler. Smarter. Faster.
+                        Simpler. Smarter. Faster.
                     </h3>
                     <p className="text-[1.125rem] text-gray-300 mb-8 max-w-lg mx-auto">
                         No learning curve. No fluff. Just a seamless editor for real business needs.

@@ -231,7 +231,7 @@ export default function FusionChat() {
 
             {/* Use Cases Section */}
             {/* Use Cases Section */}
-            <div className="relative z-10 max-w-6xl mx-auto pt-1">
+            <div className="relative z-10 pt-16 max-w-6xl mx-auto pt-1">
                 {/* Section header (matches first section style) */}
                 <div className="mb-16 text-center">
                     <div className="text-xs tracking-widest text-gray-400 mb-2 font-medium"># USE CASES</div>
