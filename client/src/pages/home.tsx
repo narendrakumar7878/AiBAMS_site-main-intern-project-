@@ -8,6 +8,8 @@ import AboutAIBAMSSection from "@/components/AboutAIBAMSSection";
 import LaunchSection from "@/components/LaunchSection";
 import gradientDivider from '../assets/gradient-divider.png';
 // import HeaderWhite from "@/components/HeaderWhite";
+import HomeHeroSection from "@/components/HomeHeroSection";
+import NewFooter from "@/components/NewFooter";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,15 +51,20 @@ export default function Home() {
     <div className="min-h-screen bg-gray-900 ">
       {/* Header */}
       <Header white={headerWhite} />
-      {/* <HeaderWhite /> */}
+      {/* <Header /> */}
       <div ref={heroRef}>
-        <HeroSection />
+        {/* <HeroSection /> */}
+        <HomeHeroSection />
       </div>
-      <AboutAIBAMSSection />
+
+
+
+      {/* <AboutAIBAMSSection />
       <LaunchSection />
       <CapabilitiesSection />
-      <LatestNewsSection />
-      <Footer />
+      <LatestNewsSection /> */}
+      {/* <Footer /> */}
+      <NewFooter />
     </div>
   );
 }
